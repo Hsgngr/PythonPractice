@@ -7,10 +7,15 @@ https://leetcode.com/explore/challenge/card/november-leetcoding-challenge/564/we
 
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+    def __repr__(self):
+        return 'Node : ' + str(self.val)
+
+
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
@@ -54,6 +59,30 @@ class Solution(object):
             return head
         else:
             return ListNode(0)
+
+
+if __name__ == '__main__':
+
+    a = ListNode(7)
+    b = ListNode(2)
+    c = ListNode(4)
+    d = ListNode(3)
+
+    e = ListNode(5)
+    f = ListNode(6)
+    g = ListNode(4)
+
+    a.next = b
+    b.next = c
+    c.next = d
+    e.next = f
+    f.next = g
+
+    sol = Solution()
+
+    result = sol.addTwoNumbers(a,e)
+
+    print(result)
 
 
 '''
