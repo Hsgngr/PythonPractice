@@ -16,7 +16,6 @@ class ListNode(object):
         return 'Node : ' + str(self.val)
 
 
-
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
@@ -62,7 +61,6 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-
     a = ListNode(7)
     b = ListNode(2)
     c = ListNode(4)
@@ -80,10 +78,9 @@ if __name__ == '__main__':
 
     sol = Solution()
 
-    result = sol.addTwoNumbers(a,e)
+    result = sol.addTwoNumbers(a, e)
 
     print(result)
-
 
 '''
 Cleaner Solution:
