@@ -2,6 +2,7 @@
 Created by  Ege of the House Hoşgüngör, the First of His Name  at 01:59 10.11.2020
 """
 
+import numpy as np
 
 def nth_most_rare(elements, n):
     """
